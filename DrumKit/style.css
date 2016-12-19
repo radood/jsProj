@@ -1,0 +1,36 @@
+html {
+	background-image: url(http://i.imgur.com/b9r5sEL.jpg);
+	background-size: cover;
+}
+
+.keys {
+	display: flex;
+	justify-content: center;
+}
+.key {
+	height: 80px;
+	width: 80px;
+	border: 5px solid black;
+	text-align: center;
+	background: rgba(0,0,0,0.4);
+	margin: 20px;
+	margin-top: 20%;
+	transition: all 0.07s;
+}
+
+kbd {
+	display: block;
+	font-size: 50px;
+	text-align: center;
+	color: white;
+}
+
+.sound {
+	color: #ffad33;
+}
+
+.playing {
+	transform: scale(1.1);
+	border-color: #ffad33;
+	box-shadow: 0 0 10px #ffad33;
+}
