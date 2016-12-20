@@ -32,10 +32,18 @@
     const hourDeg = ((hour / 60) * 360) + 90;
 
     secondHand.style.transform = `rotate(${secondsDeg}deg)`;
+    if(seconds == 59){
+      secondHand.style.transition = `all 0s`;
+    }
     minHand.style.transform = `rotate(${minDeg}deg)`;
+    if(min == 59){
+      minHand.style.transition = `all 0s`;
+    }
     hourHand.style.transform = `rotate(${hourDeg}deg)`;
-
-    console.log(seconds);
+    if(hour == 23){
+      hourHand.style.transition = `all 0s`;
+    }
+    console.log(hour);
   }
 
   setInterval(setDate, 1000);
